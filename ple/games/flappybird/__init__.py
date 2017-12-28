@@ -432,7 +432,9 @@ class FlappyBird(base.PyGameWrapper):
         self.pipe_group.update(dt)
 
         if self.lives <= 0:
-            self.score += self.rewards["loss"]
+            self.score += self.rewards["negative"]#self.rewards["loss"]
+            if self.score < -1.0:
+                self.score = -1.0
 
         self.backdrop.draw_background(self.screen)
         self.pipe_group.draw(self.screen)
