@@ -234,7 +234,8 @@ class Catcher(base.PyGameWrapper):
 if __name__ == "__main__":
     import numpy as np
 
-    pygame.init()
+    #pygame.init()
+    custom_pygame_init()
     game = Catcher(width=256, height=256)
     game.rng = np.random.RandomState(24)
     game.screen = pygame.display.set_mode(game.getScreenDims(), 0, 32)
@@ -248,3 +249,58 @@ if __name__ == "__main__":
 
         game.step(dt)
         pygame.display.update()
+
+def custom_pygame_init():
+    # pygame.transform.init()
+    # # pygame.sndarray
+    # pygame.numpy.init()
+    # pygame._arraysurfarray.init()
+    # pygame.fastevent.init()
+    # pygame.threads.traceback.init()
+    # pygame.version.init()
+    # pygame.surflock.init()
+    # pygame.image.init()
+    # pygame.color.init()
+    # # pygame._numpysndarray
+    # pygame.joystick.init()
+    # pygame.overlay.init()
+    # pygame.imageext.init()
+    # pygame.sprite.init()
+    # pygame.mask.init()
+    # pygame.threads.Queue.init()
+    # # pygame.pygame
+    # pygame.event.init()
+    # pygame.threads.sys.init()
+    # pygame.threads.init()
+    # pygame.threads.pygame.init()
+    # pygame.scrap.init()
+    # pygame.copy_reg.init()
+    # pygame.movie.init()
+    # pygame.mouse.init()
+    # pygame._numpysurfarray.init()
+    # pygame.pixelarray.init()
+    # pygame.surface.init()
+    # pygame.key.init()
+    # pygame.base.init()
+    # pygame.compat.init()
+    # pygame.sysfont.init()
+    # pygame.colordict.init()
+    # pygame.string.init()
+    # pygame.sys.init()
+    # pygame.re.init()
+    # pygame.cursors.init()
+    # pygame.cdrom.init()
+    # pygame.time.init()
+    # # pygame.mixer
+    # pygame.os.init()
+    # pygame.draw.init()
+    # # pygame
+    # pygame.rect.init()
+    # pygame.rwobject.init()
+    # # pygame.mixer_music
+    # pygame.constants.init()
+    # pygame.surfarray.init()
+    # pygame.threads.threading.init()
+    pygame.font.init()
+    #pygame.bufferproxy.init()
+    pygame.display.init()
