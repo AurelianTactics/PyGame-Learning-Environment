@@ -58,9 +58,65 @@ class PyGameWrapper(object):
         """
         Setups up the pygame env, the display and game clock.
         """
-        pygame.init()
+        #pygame.init()
+        self.custom_pygame_init()
         self.screen = pygame.display.set_mode(self.getScreenDims(), 0, 32)
         self.clock = pygame.time.Clock()
+
+    def custom_pygame_init(self):
+        # pygame.transform.init()
+        # #pygame.sndarray
+        # pygame.numpy.init()
+        # pygame._arraysurfarray.init()
+        # pygame.fastevent.init()
+        # pygame.threads.traceback.init()
+        # pygame.version.init()
+        # pygame.surflock.init()
+        # pygame.image.init()
+        # pygame.color.init()
+        # #pygame._numpysndarray
+        # pygame.joystick.init()
+        # pygame.overlay.init()
+        # pygame.imageext.init()
+        # pygame.sprite.init()
+        # pygame.mask.init()
+        # pygame.threads.Queue.init()
+        # #pygame.pygame
+        # pygame.event.init()
+        # pygame.threads.sys.init()
+        # pygame.threads.init()
+        # pygame.threads.pygame.init()
+        # pygame.scrap.init()
+        # pygame.copy_reg.init()
+        # pygame.movie.init()
+        # pygame.mouse.init()
+        # pygame._numpysurfarray.init()
+        # pygame.pixelarray.init()
+        # pygame.surface.init()
+        # pygame.key.init()
+        # pygame.base.init()
+        # pygame.compat.init()
+        # pygame.sysfont.init()
+        # pygame.colordict.init()
+        # pygame.string.init()
+        # pygame.sys.init()
+        # pygame.re.init()
+        # pygame.cursors.init()
+        # pygame.cdrom.init()
+        # pygame.time.init()
+        # #pygame.mixer
+        # pygame.os.init()
+        # pygame.draw.init()
+        # #pygame
+        # pygame.rect.init()
+        # pygame.rwobject.init()
+        # #pygame.mixer_music
+        # pygame.constants.init()
+        # pygame.surfarray.init()
+        # pygame.threads.threading.init()
+        pygame.font.init()
+        #pygame.bufferproxy.init()
+        pygame.display.init()
 
     def _setAction(self, action, last_action):
         """
